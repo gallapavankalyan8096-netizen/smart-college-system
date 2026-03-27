@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: college-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        value: smart-college-secret-key-2024
+      - key: PORT
+        value: 10000
